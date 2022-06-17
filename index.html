@@ -12,13 +12,13 @@
 <body>
 
     <!-- Это заголовок с логотипом, меню и контактами -->
-    <header>
+    <header class="header">
         <a href="" class="logo">
             <span class="web_logo">Web</span><span class="studio_logo">Studio</span>
         </a>
 
         
-
+        <div class="header-nav-contacts">
         <nav class="navigation">
             <ul class="navigation-list">
                 <li class="navigation-item">
@@ -32,11 +32,15 @@
                 </li>
             </ul>
         </nav>
-        <div class="contacts-header">
+        <ul class="contacts-header">
+            <li class="contacts-header-item"><a href="mailto:info@devstudio.com" class="hmail">info@devstudio.com</a></li>
+            <li class="contacts-header-item"><a href="tel:+380961111111" class="hphone">+38 096 111 11 11</a></li>
+        </ul>
+        <!-- <div class="contacts-header">
             <a href="mailto:info@devstudio.com">info@devstudio.com</a>
             <a href="tel:+380961111111">+38 096 111 11 11</a>
+        </div> -->
         </div>
-
 
 </header>
 
@@ -44,9 +48,11 @@
 
     <section class="our-service">
 <!-- Это главная информация страницы -->
-    <h1 class="effective-solutions">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-    <button class="order-btn">Заказать услугу</button>
-    </section>
+    <div class="our-solutions">
+    <h1 class="solutions">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+    <button class="order-btn" type="button">Заказать услугу</button>
+    </div>
+</section>
 
     <section class="our_advantages">
 <!-- Наши преимущества -->
@@ -82,8 +88,8 @@
 
     <section class="our_team">
     <!-- Наша команда -->
-    <h2  class="h2">Наша команда</h2>
-    <ul>
+    <h2  class="team-list">Наша команда</h2>
+    <ul class="list">
         <li class="our_team-list">
             <img src="./images/img_demyanenko.jpg" alt="Игорь Демьяненко - Product Designer" class="our_team-img" width="270" height="260">
                 <h5>Игорь Демьяненко</h5>
@@ -104,17 +110,22 @@
                 <h5>Михаил Ермаков</h5>
                 <p>UI Designer</p>
         </li>
-    </ul>      
+    </ul>
+    
     </section>
     
 </main>
 
 <!-- Подвал -->
-<footer id="contacts">
-    <p><span class="web-logo">Web</span>Studio</p>
+<footer id="contacts" class="footer">
+    <div class="footer-logo-contacts">
+        <div class="logo-footer-block">
+        <span class="web_logo_footer">Web</span><span class="studio_footer_logo">Studio</span>
+        </div>
     <p><address>г. Киев, пр-т Леси Украинки, 26</address></p>
     <p>info@devstudio.com</p>
     <p>+38 096 111 11 11</p>
+</div>
 </footer>
     
 </body>
