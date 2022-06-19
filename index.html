@@ -11,11 +11,12 @@
 
 <!-- Это заголовок с логотипом, меню и контактами -->
     <header class="header">
-        <a href="" class="logo">
-            <span class="web_logo">Web</span><span class="studio_logo_black">Studio</span>
-        </a>
-        <div class="header-nav-contacts">
+        
+
         <nav class="navigation">
+            <a href="" class="logo">
+            <span class="web_logo">Web</span>Studio
+        </a>
             <ul class="navigation-list">
                 <li class="navigation-item">
                     <a href="" class="navigation-link">Студия</a>
@@ -32,7 +33,7 @@
             <li class="contacts-header-item"><a href="mailto:info@devstudio.com" class="hmail">info@devstudio.com</a></li>
             <li class="contacts-header-item"><a href="tel:+380961111111" class="hphone">+38 096 111 11 11</a></li>
         </ul>
-        </div>
+   
 
     </header>
 
@@ -47,22 +48,23 @@
 
 <!-- Наши преимущества -->
     <section class="our_advantages">
+        <h2 style="display: none">Наши преимущества</h2>
 
     <ul class="our_advantages-list">
         <li class="our_advantages-item">
-            <h5 class="h5">ВНИМАНИЕ К ДЕТАЛЯМ</h5>
+            <h3 class="advantages-header">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
             <p class="our-advantage-paragraph">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
         </li>
         <li class="our_advantages-item">
-            <h5 class="h5">ПУНКТУАЛЬНОСТЬ</h5>
+            <h3 class="advantages-header">ПУНКТУАЛЬНОСТЬ</h3>
             <p class="our-advantage-paragraph">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
         </li>
         <li class="our_advantages-item">
-            <h5 class="h5">ПЛАНИРОВАНИЕ</h5>
+            <h3 class="advantages-header">ПЛАНИРОВАНИЕ</h3>
             <p class="our-advantage-paragraph">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
         </li>
         <li class="our_advantages-item">
-            <h5 class="h5">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h5>
+            <h3 class="advantages-header">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
             <p class="our-advantage-paragraph">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
         </li>
     </ul>
@@ -70,12 +72,18 @@
 
 <!-- Чем мы занимаемся -->
     <section class="what_are_we_doing">
-        <h2 class="h2">Чем мы занимаемся</h2>
-        <div class="what_are_we_doing-list">
-            <img class="what_are_we_doing_list-img" src="./images/programming.jpg" alt="Программирование" width="370" height="294">
-            <img class="what_are_we_doing_list-img" src="./images/mob_app.jpg" alt="Разработка мобильных приложений" width="370" height="294">
-            <img class="what_are_we_doing_list-img" src="./images/visual_design.jpg" alt="Дизайн" width="370" height="294">
-        </div>
+        <h2 class="what_are_we_doing-header">Чем мы занимаемся</h2>
+        <ul class="what_are_we_doing-list">
+            <li class="what_are_we_doing_list-img">
+                <img class="what_are_we_doing_item-img" src="./images/programming.jpg" alt="Программирование" width="370" height="294">
+            </li>
+            <li class="what_are_we_doing_list-img">
+                <img class="what_are_we_doing_item-img" src="./images/mob_app.jpg" alt="Разработка мобильных приложений" width="370" height="294">
+            </li>
+            <li class="what_are_we_doing_list-img">
+                <img class="what_are_we_doing_item-img" src="./images/visual_design.jpg" alt="Дизайн" width="370" height="294">
+            </li>
+        </ul>
     </section>
 
 <!-- Наша команда -->
@@ -84,22 +92,22 @@
     <ul class="list">
         <li class="our_team-list">
             <img src="./images/img_demyanenko.jpg" alt="Игорь Демьяненко - Product Designer" class="our_team-img" width="270" height="260">
-                <h5>Игорь Демьяненко</h5>
+                <h3>Игорь Демьяненко</h3>
                 <p>Product Designer111</p>
         </li>
         <li class="our_team-list">
             <img src="./images/img_repina.jpg" alt="Ольга Репина - Frontend Developer" class="our_team-img" width="270" height="260">
-                <h5>Ольга Репина</h5>
+                <h3>Ольга Репина</h3>
                 <p>Frontend Developer</p>
         </li>
         <li class="our_team-list">
             <img src="./images/img_tarasov.jpg" alt="Николай Тарасов - Marketing" class="our-team_img" width="270" height="260">
-                <h5>Николай Тарасов</h5>
+                <h3>Николай Тарасов</h3>
                 <p>Marketing</p>
         </li>
         <li class="our_team-list">
             <img src="./images/img_yermakov.jpg" alt="Михаил Ермаков - UI Designer" class="our-team-img" width="270" height="260">
-                <h5>Михаил Ермаков</h5>
+                <h3>Михаил Ермаков</h3>
                 <p>UI Designer</p>
         </li>
     </ul>  
@@ -109,16 +117,24 @@
 
 <!-- Подвал -->
 <footer id="contacts" class="footer">
-    <div class="footer-logo-contacts">
-        <div class="logo-footer-block">
-            <a href="" class="logo">
-                <span class="web_logo">Web</span><span class="studio_logo_white">Studio</span>
+
+            <a href="#" class="logo">
+                <span class="web_logo">Web</span>Studio
             </a>
-        </div>
-    <address>г. Киев, пр-т Леси Украинки, 26</address>
-    <p>info@devstudio.com</p>
-    <p>+38 096 111 11 11</p>
-</div>
+
+    <address>
+        <ul class="footer-address-list">
+            <li class="footer-address-item">
+                <a href="https://goo.gl/maps/SGQLfNEmpk8LLVfc7" target="_blank">г. Киев, пр-т Леси Украинки, 26</a>               
+            </li>
+            <li class="footer-address-item">
+                <a href="mailto:info@devstudio.com" class="hmail">info@devstudio.com</a>
+            </li>
+            <li class="footer-address-item">
+                <a href="tel:+380961111111" class="hphone">+38 096 111 11 11</a>
+            </li>
+        </ul>
+    </address>
 </footer>
     
 </body>
